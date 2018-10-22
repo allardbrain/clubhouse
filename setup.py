@@ -16,7 +16,6 @@ setup(
         'Mahmoud Abdelkader',
     ]),
     url='https://github.com/mahmoudimus/clubhouse',
-    packages=find_packages(exclude=['tests', '*.test', '*.test.*']),
     include_package_data=True,
     zip_safe=False,
     install_requires=[
