@@ -19,9 +19,9 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'marshmallow>=3.0,<4',
-        'attrs>=17.4.0,<17.5',
-        'requests>=2.0,<3.0',
+        'marshmallow=3.0.0b18',
+        'attrs=17.4.0',
+        'requests=2.20.0',
     ],
     license='MIT',
     classifiers=[
