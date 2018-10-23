@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from distutils.core import setup
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 VERSION = '0.1.0'
@@ -16,7 +15,7 @@ setup(
         'Mahmoud Abdelkader',
     ]),
     url='https://github.com/mahmoudimus/clubhouse',
-    packages=['clubhouse'],
+    packages=find_packages(exclude=('tests', 'examples')),
     include_package_data=True,
     zip_safe=False,
     install_requires=[
