@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 
+import sys
+import os
+
+assert sys.version_info >= (2, 7), 'We only support Python 2.7+'
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'clubhouse'))
 
 VERSION = '0.1.0'
 
@@ -17,7 +23,7 @@ setup(
     url='https://github.com/mahmoudimus/clubhouse',
     packages=find_packages(exclude=('tests', 'examples')),
     include_package_data=True,
-    zip_safe=False,
+    zip_safe=True,
     install_requires=[
         'marshmallow>=3.0.0b18',
         'attrs>=17.4.0',
